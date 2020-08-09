@@ -1,0 +1,152 @@
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-semi-muted);
+  font-size: calc(12px + 0.15vw);
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0 5% 0 5%;
+}
+
+header {
+  background-color: #999999;
+  padding: 15px 5% 15px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-name {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.icon-topheader {
+  width: 1.3em;
+  height: 1.3em;
+  fill: blue;
+}
+
+#hamburguer-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Side Nav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.title-main {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.container__box {
+  background-color: #999999;
+}
+
+.container__title {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.container__text {
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+  }
+
+  .container__box:first-child,
+  .container__box:nth-child(2) {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container__box:first-child {
+    margin-right: 15px;
+  }
+  .container__box:first-child,
+  .container__box:nth-child(2) {
+    flex: 1 0 35%;
+  }
+}
+
+.container__box {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 991px) {
+  #hamburguer-menu {
+    display: none;
+  }
+}
