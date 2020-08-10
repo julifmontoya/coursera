@@ -22,76 +22,46 @@ p {
   padding: 0 5% 0 5%;
 }
 
-header {
-  background-color: #999999;
-  padding: 15px 5% 15px 5%;
-  display: flex;
-  justify-content: space-between;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-.company-name {
-  font-size: 1.25em;
-  font-weight: 700;
+.topnav #myLinks {
+  display: none;
 }
 
-.icon-topheader {
-  width: 1.3em;
-  height: 1.3em;
-  fill: blue;
-}
-
-#hamburguer-menu {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-/* Side Nav */
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.title-company {
+  color: white;
+  padding: 14px 5%;
   text-decoration: none;
-  color: #818181;
+  font-size: 17px;
   display: block;
-  transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-.sidenav .closebtn {
+.topnav a.icon {
+  padding-right: 5%;
+  display: block;
   position: absolute;
+  right: 0;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
 }
 
-#main {
-  transition: margin-left 0.5s;
-  padding: 20px;
+.active {
+  color: white;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+#myLinks {
+  text-align: center;
 }
 
 .title-main {
@@ -146,7 +116,7 @@ header {
 }
 
 @media (min-width: 767px) {
-  #hamburguer-menu {
+  .topnav a.icon {
     display: none;
   }
 }

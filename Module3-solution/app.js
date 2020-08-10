@@ -1,13 +1,12 @@
 //Selectors
-const hamburguerMenu = document.getElementById("hamburguer-menu");
-const closeNav = document.querySelector(".closeNav");
-const mySidenav = document.getElementById("mySidenav");
+const hamburguerMenu = document.querySelector(".hamburguer-menu");
 
 //Event Listeners
 hamburguerMenu.addEventListener("click", () => {
-  mySidenav.style.width = "250px";
-});
-
-closeNav.addEventListener("click", () => {
-  mySidenav.style.width = "0";
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 });
