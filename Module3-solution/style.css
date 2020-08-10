@@ -145,7 +145,7 @@ header {
   margin-bottom: 15px;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 767px) {
   #hamburguer-menu {
     display: none;
   }
